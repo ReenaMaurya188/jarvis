@@ -1,0 +1,11 @@
+Model Information:
+* title:	india
+* source:	https://sketchfab.com/3d-models/india-c86b16b141e54d2d844b740941bedb0c
+* author:	kdreamer (https://sketchfab.com/kdreamer)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "india" (https://sketchfab.com/3d-models/india-c86b16b141e54d2d844b740941bedb0c) by kdreamer (https://sketchfab.com/kdreamer) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+httpx
+duckduckgo-search
+apscheduler
+sentence-transformers
+groq
+supabase
+google-generativeai
+python-dotenv
+python-multipart
+Pillow
+psutil

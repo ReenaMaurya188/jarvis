@@ -1,0 +1,86 @@
+.hud-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  margin: 0 auto 12px;
+  width: fit-content;
+  transition: all 0.3s;
+}
+
+.hud-indicator {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  height: 20px;
+}
+
+.wave {
+  width: 4px;
+  height: 8px;
+  background-color: #888;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+/* Idle state */
+.hud-container.idle .wave {
+  background-color: #888;
+}
+
+/* Listening state */
+.hud-container.listening {
+  background-color: #ffebee;
+}
+.hud-container.listening .wave {
+  background-color: #f44336;
+  animation: equalize 1s infinite alternate;
+}
+.hud-container.listening .wave1 { animation-delay: 0.1s; }
+.hud-container.listening .wave2 { animation-delay: 0.3s; }
+.hud-container.listening .wave3 { animation-delay: 0.2s; }
+
+/* Thinking state */
+.hud-container.thinking {
+  background-color: #e3f2fd;
+}
+.hud-container.thinking .wave {
+  background-color: #2196f3;
+  animation: pulse-wave 1s infinite alternate;
+}
+.hud-container.thinking .wave1 { animation-delay: 0.0s; }
+.hud-container.thinking .wave2 { animation-delay: 0.2s; }
+.hud-container.thinking .wave3 { animation-delay: 0.4s; }
+
+/* Speaking state */
+.hud-container.speaking {
+  background-color: #e8f5e9;
+}
+.hud-container.speaking .wave {
+  background-color: #4caf50;
+  animation: equalize 0.5s infinite alternate;
+}
+.hud-container.speaking .wave1 { animation-delay: 0.1s; }
+.hud-container.speaking .wave2 { animation-delay: 0.4s; }
+.hud-container.speaking .wave3 { animation-delay: 0.2s; }
+
+.hud-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@keyframes equalize {
+  0% { height: 8px; }
+  100% { height: 20px; }
+}
+
+@keyframes pulse-wave {
+  0% { opacity: 0.3; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1.2); }
+}
